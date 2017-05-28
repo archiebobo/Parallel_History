@@ -12,8 +12,8 @@ namespace ConsoleApplication1
         static void Main(string[] args)
         {
             ph_HistoryPiece cc = new ph_HistoryPiece(Nation.China,2007,2007,"haah","haha");
-            ph_date dd = new ph_date(-1,12,31);
-            Console.Write(dd.DaysFromEra);
+            ph_Date dd = new ph_Date(-1,2,29);
+            Console.Write(dd.Response);
             Console.ReadKey();
         }
     }

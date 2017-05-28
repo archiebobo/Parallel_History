@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "History", "ConsoleApplicati
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ph_Sys", "Ph_Sys\ph_Sys.csproj", "{FCF064E8-9B81-4256-8ED6-F7B73245436E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ph_Geographic", "ph_Geographic\ph_Geographic.csproj", "{D9984E07-5C7B-4FD8-B840-BDD3D6761393}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -28,6 +30,10 @@ Global
 		{FCF064E8-9B81-4256-8ED6-F7B73245436E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FCF064E8-9B81-4256-8ED6-F7B73245436E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FCF064E8-9B81-4256-8ED6-F7B73245436E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D9984E07-5C7B-4FD8-B840-BDD3D6761393}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9984E07-5C7B-4FD8-B840-BDD3D6761393}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9984E07-5C7B-4FD8-B840-BDD3D6761393}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9984E07-5C7B-4FD8-B840-BDD3D6761393}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace HistoryPiece
 {
     public enum DateType { Gregorian, Lunar, Jewish, Japanese };
-    public class ph_date
+    public class ph_Date
     {
         private enum Era { BCE, CE };
         private int year;
@@ -15,7 +15,7 @@ namespace HistoryPiece
         private int day;
         private DateType date_type;
         private ph_Sys.ph_Sys_Response response;
-        public ph_date(int y) 
+        public ph_Date(int y) 
         {
             this.year = y;
             this.month = 0;
@@ -23,7 +23,7 @@ namespace HistoryPiece
             this.date_type = DateType.Gregorian;
             this.response=new ph_Sys.ph_Sys_Response(test_date());
         }
-        public ph_date(int y, int m) 
+        public ph_Date(int y, int m) 
         {
             this.year = y;
             this.month = m;
@@ -31,7 +31,7 @@ namespace HistoryPiece
             this.date_type = DateType.Gregorian;
             this.response = new ph_Sys.ph_Sys_Response(test_date());
         }
-        public ph_date(int y, int m, int d)
+        public ph_Date(int y, int m, int d)
         {
             this.year = y;
             this.month = m;
@@ -83,30 +83,61 @@ namespace HistoryPiece
                         }
                     }
                 }
-                if (this.year / 4 == 0)
+                if (this.year > 0)
                 {
-                    if (this.day < 0 || this.day > 29)
+                    if (this.year % 4 == 0)
                     {
-                        this.reset_init();
-                        return 1001;
+                        if (this.day < 0 || this.day > 29)
+                        {
+                            this.reset_init();
+                            return 1001;
+                        }
+                        else
+                        {
+                            return 0;
+                        }
                     }
                     else
                     {
-                        return 0;
+                        if (this.day < 0 || this.day > 28)
+                        {
+                            this.reset_init();
+                            return 1001;
+                        }
+                        else
+                        {
+                            return 0;
+                        }
                     }
                 }
                 else
                 {
-                    if (this.day < 0 || this.day > 28)
+                    if (this.year % 4 == -1)
                     {
-                        this.reset_init();
-                        return 1001;
+                        if (this.day < 0 || this.day > 29)
+                        {
+                            this.reset_init();
+                            return 1001;
+                        }
+                        else
+                        {
+                            return 0;
+                        }
                     }
                     else
                     {
-                        return 0;
+                        if (this.day < 0 || this.day > 28)
+                        {
+                            this.reset_init();
+                            return 1001;
+                        }
+                        else
+                        {
+                            return 0;
+                        }
                     }
                 }
+
             }
         }
         protected void reset_init()
@@ -162,57 +193,6 @@ namespace HistoryPiece
             get
             {
                 return this.date_type;
-            }
-        }
-        public int DaysFromEra
-        {
-            get
-            {
-                int days = 0;
-                days += (this.year - 1) / 4 * 1461;
-                days += (this.year - 1) % 4 * 365;
-                for (int i = 1; i < this.month; i++)
-                {
-                    bool found = false;
-                    foreach (int j in new int[] { 1, 3, 5, 7, 8, 10 })
-                    {
-                        if (j == i)
-                        {
-                            days += 31;
-                            found = true;
-                            break;
-                        }
-                    }
-                    if (!found)
-                    {
-                        foreach (int j in new int[] { 4, 6, 9, 11 })
-                        {
-                            if (j == i)
-                            {
-                                days += 30;
-                                found = true;
-                                break;
-                            }
-                        }
-                    }
-                    if (!found)
-                    {
-                        if (this.year % 4 == 0)
-                        {
-                            days += 29;
-                        }
-                        else
-                        {
-                            days += 28;
-                        }
-                    }
-                }
-                days += this.day;
-                if (days == -365)
-                {
-                    days = 0;
-                }
-                return days;
             }
         }
     }
