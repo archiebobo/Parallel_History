@@ -6,10 +6,17 @@ using System.Threading.Tasks;
 
 namespace ph_Sys
 {
-    public enum ph_Response { 
-        Seccess = 0, 
-        UnkownError = -1 , 
-        DateError = 1001 };
+    public enum ph_Response
+    {
+        Seccess = 0,
+        UnkownError = -1,
+        Date_YearError = 1001101,
+        Date_MonthError = 1001102,
+        Date_DayError = 1001103,
+        YearDomainError = 1001201,
+        MonthDomainError = 1001202,
+        DayDomainError = 1001203,
+    };
     public class ph_Sys_Response
     {
         private int code;

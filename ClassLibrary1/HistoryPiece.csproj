@@ -41,8 +41,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ph_date\ph_DateDay.cs" />
+    <Compile Include="ph_date\ph_DateMonth.cs" />
+    <Compile Include="ph_date\ph_DateYear.cs" />
+    <Compile Include="ph_date\ph_DomainDate.cs" />
+    <Compile Include="ph_date\ph_DomainDay.cs" />
+    <Compile Include="ph_date\ph_DomainMonth.cs" />
+    <Compile Include="ph_date\ph_DomainYear.cs" />
     <Compile Include="ph_Geographic.cs" />
-    <Compile Include="ph_date\ph_date.cs" />
+    <Compile Include="ph_date\ph_Date.cs" />
     <Compile Include="ph_Nation.cs" />
     <Compile Include="ph_Person.cs" />
     <Compile Include="ph_HistoryPiece.cs" />

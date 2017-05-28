@@ -12,8 +12,9 @@ namespace HistoryPiece
     {
         string name;
         SubContnt sub_continent;
-        public ph_Region(SubContnt sub_continent)
+        public ph_Region(string name, SubContnt sub_continent)
         {
+            this.name = name;
             this.sub_continent = sub_continent;
         }
         public string Name
