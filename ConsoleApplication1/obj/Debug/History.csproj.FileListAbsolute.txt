@@ -1,0 +1,10 @@
+d:\360data\重要数据\我的文档\visual studio 2013\Projects\ClassLibrary1\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config
+d:\360data\重要数据\我的文档\visual studio 2013\Projects\ClassLibrary1\ConsoleApplication1\obj\Debug\ConsoleApplication1.exe
+d:\360data\重要数据\我的文档\visual studio 2013\Projects\ClassLibrary1\ConsoleApplication1\obj\Debug\ConsoleApplication1.pdb
+d:\360data\重要数据\我的文档\visual studio 2013\Projects\ClassLibrary1\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+d:\360data\重要数据\我的文档\visual studio 2013\Projects\ClassLibrary1\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+d:\360data\重要数据\我的文档\visual studio 2013\Projects\ClassLibrary1\ConsoleApplication1\bin\Debug\ClassLibrary1.dll
+d:\360data\重要数据\我的文档\visual studio 2013\Projects\ClassLibrary1\ConsoleApplication1\bin\Debug\ClassLibrary1.pdb
+d:\360data\重要数据\我的文档\visual studio 2013\Projects\ClassLibrary1\ConsoleApplication1\obj\Debug\History.csprojResolveAssemblyReference.cache
+d:\360data\重要数据\我的文档\visual studio 2013\Projects\ClassLibrary1\ConsoleApplication1\bin\Debug\Ph_Sys.dll
+d:\360data\重要数据\我的文档\visual studio 2013\Projects\ClassLibrary1\ConsoleApplication1\bin\Debug\Ph_Sys.pdb
