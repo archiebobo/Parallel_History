@@ -8,3 +8,8 @@ C:\ProgramWork\Paralelle History\parallel_History\Ph_Sys\bin\Debug\Ph_Sys.pdb
 C:\ProgramWork\Paralelle History\parallel_History\Ph_Sys\obj\Debug\ph_Sys.csprojResolveAssemblyReference.cache
 C:\ProgramWork\Paralelle History\parallel_History\Ph_Sys\obj\Debug\Ph_Sys.dll
 C:\ProgramWork\Paralelle History\parallel_History\Ph_Sys\obj\Debug\Ph_Sys.pdb
+D:\360data\重要数据\桌面\History\Parallel_History\Ph_Sys\bin\Debug\Ph_Sys.dll
+D:\360data\重要数据\桌面\History\Parallel_History\Ph_Sys\bin\Debug\Ph_Sys.pdb
+D:\360data\重要数据\桌面\History\Parallel_History\Ph_Sys\obj\Debug\ph_Sys.csprojResolveAssemblyReference.cache
+D:\360data\重要数据\桌面\History\Parallel_History\Ph_Sys\obj\Debug\Ph_Sys.dll
+D:\360data\重要数据\桌面\History\Parallel_History\Ph_Sys\obj\Debug\Ph_Sys.pdb

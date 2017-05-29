@@ -19,5 +19,19 @@ namespace HistoryPiece
                 return this.response;
             }
         }
+        public ph_Date Begin
+        {
+            get
+            {
+                return this.begin;
+            }
+        }
+        public ph_Date End
+        {
+            get
+            {
+                return this.end;
+            }
+        }
     }
 }

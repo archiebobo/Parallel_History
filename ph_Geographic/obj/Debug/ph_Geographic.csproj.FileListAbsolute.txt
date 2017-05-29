@@ -1,0 +1,4 @@
+D:\360data\重要数据\桌面\History\Parallel_History\ph_Geographic\bin\Debug\ph_Geographic.dll
+D:\360data\重要数据\桌面\History\Parallel_History\ph_Geographic\bin\Debug\ph_Geographic.pdb
+D:\360data\重要数据\桌面\History\Parallel_History\ph_Geographic\obj\Debug\ph_Geographic.dll
+D:\360data\重要数据\桌面\History\Parallel_History\ph_Geographic\obj\Debug\ph_Geographic.pdb

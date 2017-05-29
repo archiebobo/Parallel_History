@@ -19,68 +19,93 @@ namespace HistoryPiece
             base.valid_check();
             if (this.Response.IsSeccess)
             {
-                bool found = false;
-                foreach (int m in new int[] { 1, 3, 5, 7, 8, 10, 12 })
+                if (this.day < 0 || this.day > this.DaysOfMonth)
                 {
-                    if (this.month == m)
-                    {
-                        if (this.day < 0 || this.day > 31)
-                        {
-                            this.response = new ph_Sys.ph_Sys_Response(1001103);
-                        }
-                        else
-                        {
-                            this.response = new ph_Sys.ph_Sys_Response(0);
-                        }
-                        found = true;
-                        break;
-                    }
+                    this.response = new ph_Sys.ph_Sys_Response(1001103);
                 }
-                if (!found)
+                else
                 {
-                    foreach (int m in new int[] { 4, 6, 9, 11 })
+                    this.response = new ph_Sys.ph_Sys_Response(0);
+                }
+            }
+        }
+        public static ph_DomainDay operator -(ph_DateDay fir, ph_DateDay sec)
+        {
+            return new ph_DomainDay(sec, fir);
+        }
+        public static ph_DateDay operator +(ph_DateDay a, int b)
+        {
+            if (a.Response.IsSeccess)
+            {
+                if (a.Day + b < a.DaysOfMonth)
+                {
+                    a.day = a.day + b;
+                }
+                else
+                {
+                    if (a.DayInYear + b <= a.DaysOfYear)
                     {
-                        if (this.month == m)
+                        b -= a.DaysOfMonth - a.day + 1;
+                        a.month++;
+                        a.day = 1;
+                        while (b != 0)
                         {
-                            if (this.day < 0 || this.day > 30)
+
+                            if (b <= a.DaysOfMonth - a.Day)
                             {
-                                this.response = new ph_Sys.ph_Sys_Response(1001103);
+                                a.day = a.day + b;
+                                break;
                             }
                             else
                             {
-                                this.response = new ph_Sys.ph_Sys_Response(0);
+                                b -= a.DaysOfMonth;
+                                a.month++;
                             }
-                            found = true;
-                            break;
-                        }
-                    }
-                }
-                if (!found)
-                {
-                    if ((this.year > 0 && this.year % 4 == 0) || (this.year < 0 && this.year % 4 == -1))
-                    {
-                        if (this.day < 0 || this.day > 29)
-                        {
-                            this.response = new ph_Sys.ph_Sys_Response(1001103);
-                        }
-                        else
-                        {
-                            this.response = new ph_Sys.ph_Sys_Response(0);
                         }
                     }
                     else
                     {
-                        if (this.day < 0 || this.day > 28)
+                        b += a.DayInYear - 1;
+                        a.day = 1;
+                        a.month = 1;
+                        while (b > a.DaysOfYear - 1)
                         {
-                            this.response = new ph_Sys.ph_Sys_Response(1001103);
+                            b -= a.DaysOfYear;
+                            a.year++;
+                            a.year = a.year == 0 ? 1 : a.year;
                         }
-                        else
+                        while (b != 0)
                         {
-                            this.response = new ph_Sys.ph_Sys_Response(0);
+
+                            if (b <= a.DaysOfMonth - a.Day)
+                            {
+                                a.day = a.day + b;
+                                break;
+                            }
+                            else
+                            {
+                                b -= a.DaysOfMonth;
+                                a.month++;
+                            }
                         }
                     }
                 }
+                return a;
             }
+            else
+            {
+                return new ph_DateDay(a.Year, a.Month, a.Day);
+            }
+        }
+        public static ph_DateDay operator +(ph_DateDay a, ph_DomainDay b)
+        {
+            int m = b.DayDomain;
+            a = a + m;
+            return a;
+        }
+        public static ph_DateDay operator ++(ph_DateDay a)
+        {
+            return a + 1;
         }
         public int Day
         {
@@ -163,7 +188,7 @@ namespace HistoryPiece
                                 days += 365;
                             }
                         }
-                        days = this.DayInYear - days-1;
+                        days = this.DayInYear - days - 1;
                         return days;
                     }
                 }

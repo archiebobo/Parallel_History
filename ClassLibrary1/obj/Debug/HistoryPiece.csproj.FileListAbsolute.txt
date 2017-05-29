@@ -12,3 +12,10 @@ C:\ProgramWork\Paralelle History\parallel_History\ClassLibrary1\bin\Debug\Ph_Sys
 C:\ProgramWork\Paralelle History\parallel_History\ClassLibrary1\obj\Debug\HistoryPiece.csprojResolveAssemblyReference.cache
 C:\ProgramWork\Paralelle History\parallel_History\ClassLibrary1\obj\Debug\ClassLibrary1.dll
 C:\ProgramWork\Paralelle History\parallel_History\ClassLibrary1\obj\Debug\ClassLibrary1.pdb
+D:\360data\重要数据\桌面\History\Parallel_History\ClassLibrary1\bin\Debug\ClassLibrary1.dll
+D:\360data\重要数据\桌面\History\Parallel_History\ClassLibrary1\bin\Debug\ClassLibrary1.pdb
+D:\360data\重要数据\桌面\History\Parallel_History\ClassLibrary1\bin\Debug\Ph_Sys.dll
+D:\360data\重要数据\桌面\History\Parallel_History\ClassLibrary1\bin\Debug\Ph_Sys.pdb
+D:\360data\重要数据\桌面\History\Parallel_History\ClassLibrary1\obj\Debug\HistoryPiece.csprojResolveAssemblyReference.cache
+D:\360data\重要数据\桌面\History\Parallel_History\ClassLibrary1\obj\Debug\ClassLibrary1.dll
+D:\360data\重要数据\桌面\History\Parallel_History\ClassLibrary1\obj\Debug\ClassLibrary1.pdb

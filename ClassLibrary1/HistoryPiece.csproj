@@ -53,6 +53,9 @@
     <Compile Include="ph_Nation.cs" />
     <Compile Include="ph_Person.cs" />
     <Compile Include="ph_HistoryPiece.cs" />
+    <Compile Include="ph_Text\ph_Text.cs" />
+    <Compile Include="ph_Text\ph_TextIdGenerator.cs" />
+    <Compile Include="ph_Text\ph_TextKnot.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -18,7 +18,7 @@ namespace HistoryPiece
         protected override void check_valid()
         {
             base.check_valid();
-            if (!this.Response.IsSeccess)
+            if (this.Response.IsSeccess)
             {
                 if (!this.begin.Response.IsSeccess)
                 {

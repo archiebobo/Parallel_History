@@ -44,6 +44,7 @@ namespace HistoryPiece
             this.name = name;
             this.gender = gender;
             this.born = born;
+            this.dead = dead;
             this.culture = "";
             this.state = "";
             this.nationality = "";
